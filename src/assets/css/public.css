@@ -1,0 +1,132 @@
+/*去掉自带❌*/
+
+input[type="search"] {
+	-webkit-appearance: none !important;
+}
+/*清除谷歌浏览器下的 search 叉号*/
+input::-webkit-search-cancel-button{
+  display: none !important;
+}
+/*清除IE下的 search 叉号*/
+input[type=search]::-ms-clear{
+  display: none !important;
+}
+
+/*去除mint-UI input叉号*/
+.mintui-field-error:before{
+	content: "" !important;
+}
+
+/*改变input-placeholder颜色，变淡*/
+input::-webkit-input-placeholder {
+	color: #bbbbbb;
+	font-size: .13rem;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+input:-moz-placeholder {
+	color: #bbbbbb;
+	font-size: .13rem;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+input::-moz-placeholder {
+	color: #bbbbbb;
+	font-size: .13rem;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+input:-ms-input-placeholder {
+	color: #bbbbbb;
+	font-size: .13rem;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+
+/*改变textarea-placeholder颜色，变淡*/
+textarea::-webkit-input-placeholder {
+	color: #bbbbbb;
+	font-size: .13rem;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+	line-height: 4.8em;
+}
+
+textarea:-moz-placeholder {
+	color: #bbbbbb;
+	font-size: .13rem;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+	line-height: 4.8em;
+}
+
+textarea::-moz-placeholder {
+	color: #bbbbbb;
+	font-size: .13rem;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+	line-height: 4.8em;
+}
+
+textarea:-ms-input-placeholder {
+	color: #bbbbbb;
+	font-size: .13rem;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+	line-height: 4.8em;
+}
+
+
+/*mintUI -- mt-field 上下边框线条消失，自定义线条，到达边缘*/
+
+.mint-cell-wrapper {
+	background-attachment: fixed !important;
+	/*如果背景图像的 background-attachment 属性为 "fixed"，则该属性<background-origin>没有效果。*/
+}
+
+
+/*自定义线条*/
+
+.mt_col_top .mint-cell-wrapper {
+	border-top: 1px solid #EEEEEE !important;
+	/*font-size: 0.15rem;*/
+}
+
+
+/*是否必填*/
+
+.verify_item .mint-cell-text::before {
+	content: "*";
+	color: red;
+	vertical-align: middle;
+}
+
+.mint-cell-wrapper {
+	font-size: .14rem;
+}
+
+.mint-tab-item-label{
+	font-size: 0.14rem;
+}
+
+/*固定头部*/
+
+.header_position {
+  /*position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  z-index: 1900;
+  height: 0.4rem;*/
+}
+
+.mint-header .is-right {
+	text-align: right !important;
+}
+
+.mint-header-button {
+	/*-webkit-box-flex: 0 !important;*/
+	/*flex: 0 !important;*/
+}
+
+.mint-field-core {
+    font-family: Microsoft YaHei, simhei, Tahoma, Arial, sans-serif !important;
+    color: #333333 !important;
+    font-weight: 400 !important;
+}

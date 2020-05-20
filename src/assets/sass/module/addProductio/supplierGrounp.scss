@@ -1,0 +1,106 @@
+.supplierGrounp{
+    margin-top: .15rem;
+    .supplierStatus{
+        @include pad($right: .15rem, $left: .15rem, $bottom: .15rem);
+        h3{
+            @include disFlex($justify: space-between, $align: center);
+            .supplierName{
+                color: #333333;
+                font-size: 0.14rem;
+            }
+        }
+        .tip{
+            margin-top: .08rem;
+            color: $gray;
+        }
+    }
+    .supplier{
+        position: relative;
+        height: .49rem;
+        @include pad(.15rem, .15rem, .15rem, .15rem);
+        background: $white;
+        .supplierTitle{ // 已选择供应商
+            position: absolute;
+            left: .15rem;
+            top: .15rem;
+            font-size: .14rem;
+            color: #666666;
+        }
+        .noSupplier{ // 未选择供应商
+            position: absolute;
+            left: .15rem;
+            top: .15rem;
+            color: #aaa;
+        }
+        .chooseSupplier{ // 切换供应商
+            position: absolute;
+            right: .35rem;
+            top: .15rem;
+            color: #aaa;
+        }
+        i{
+            position: absolute;
+            right: .15rem;
+            top: .15rem;
+            color: #aaa;
+        }
+    }
+    .supplierPhone{
+        margin-top: 1px;
+        @include disFlex($justify: space-between, $align: center);
+        @include pad(.15rem, .15rem, .15rem, .15rem);
+        height: .69rem;
+        background: #fff;
+        .linkMan{
+            @include disFlex($justify: flex-start, $align: center);
+            .linkManImg{
+                width: .40rem;
+                height: .40rem;
+                border-radius: 50%;
+                background: #bbb;
+                overflow: hidden;
+            }
+            .linkManDetail{
+                margin-left: .10rem;
+                .linkManName{
+                    font-size: .14rem;
+                    color: #666666;
+                    margin-bottom: .04rem;
+                }
+                .linkManPhone{
+                    color: #ccc;
+                }
+            }
+        }
+        .call{
+            span{
+                color: #ccc;
+            }
+            i{
+                margin-left: .05rem;
+                color: #0099ff;
+            }
+        }
+    }
+    .deliveryTime{
+        margin-top: .15rem;
+        @include disFlex($justify: space-between, $align: center);
+        @include pad(.15rem, .15rem, .15rem, .15rem);
+        background: #fff;
+        span{
+            font-size: .14rem;
+            color: #666666;
+        }
+        div{
+            span{
+                color: #ccc;
+            }
+            i{
+                color: #ccc;
+            }
+        }
+    }
+}
+.dp-header .dp-item.dp-right { // 改变时间插件样式
+    color: #0099ff;
+}

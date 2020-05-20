@@ -1,0 +1,144 @@
+/* 覆盖mint-ui的primary颜色，改为自己UI的主题色 */
+@import './mixin.scss';
+
+.mint-navbar 
+{
+    border-bottom: .01rem solid #eee;
+    .mint-tab-item{
+        &.is-selected {
+            margin-bottom: 0 !important;
+            font-size: 0.14rem;
+            @include color();
+            @include borderColor();
+            border-style: solid;
+            border-top-width: 0;
+            border-left-width: 0;
+            border-right-width: 0;
+            border-bottom-width: 2px;
+        }
+    }
+}
+
+.mint-button {
+    height: .41rem !important;
+
+    &.mint-button--small {
+        height: .33rem !important;
+    }
+}
+
+.mint-toast {
+    z-index: 3000 !important;
+}
+
+.mint-header {
+    @include backgroundColor();
+    height: .4rem;
+    .mint-header-title {
+        font-size: .16rem !important;
+        line-height: .4rem;
+    }
+
+    .mint-button {
+        font-size: .14rem;
+    }
+}
+
+.mint-button:not(.is-disabled):active::after {
+    opacity: .2
+}
+
+.mint-button--primary {
+    @include backgroundColor();
+}
+
+.mint-button--primary.is-plain {
+    @include borderColor();
+    @include color();
+}
+
+.mint-badge.is-primary {
+    @include backgroundColor();
+}
+
+.mint-switch-input:checked+.mint-switch-core {
+    @include borderColor();
+    @include backgroundColor();
+}
+
+.mint-tabbar>.mint-tab-item.is-selected {
+    @include color();
+}
+
+.mint-searchbar-cancel {
+    @include color();
+}
+
+.mint-checkbox-input:checked+.mint-checkbox-core {
+    @include backgroundColor();
+    @include borderColor();
+}
+
+.mint-radio-input:checked+.mint-radio-core {
+    @include backgroundColor();
+    @include borderColor();
+}
+
+.mt-range-progress {
+    @include backgroundColor();
+}
+
+.mt-progress-progress {
+    @include backgroundColor();
+}
+
+.mint-msgbox-confirm {
+    @include color();
+}
+
+.mint-msgbox-confirm:active {
+    @include color();
+}
+
+.mint-datetime-action {
+    @include color();
+}
+
+.mint-field-core {
+    text-align: right;
+    padding-right: .1rem;
+}
+
+.mint-field-other {
+    .iconfont {
+        color: #999;
+    }
+}
+
+.mint-field-clear {
+    position: absolute;
+    right: .2rem;
+}
+
+// .mint-msgbox-header {
+//     display: none;
+// }
+
+// .mint-msgbox-errormsg {
+//     display: none;
+// }
+
+// .mint-msgbox-input {
+//     padding: 0 !important;
+// }
+
+.vux-datetime-cancel,
+.vux-datetime-confirm {
+    text-align: center !important;
+    @include color();
+}
+.vux-datetime-clear {
+    color: #999999 !important;
+}
+
+

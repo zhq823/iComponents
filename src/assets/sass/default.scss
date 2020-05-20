@@ -1,0 +1,43 @@
+// 引入基础变量
+@import '../css/mixin.scss';
+@import './variable.scss';
+@import 'mixin';
+@import 'reset';
+
+// 引入组件样式
+@import './components/sm_header.scss';
+@import './components/sm_footer.scss';
+
+// 引入views样式
+// tenant-view-style
+@import './views/tenant/addProduction.scss';
+
+    // addProduction.vue ==> module样式
+    @import './module/addProductio/supplierGrounp.scss';
+    @import './module/addProductio/productionGrounp.scss';
+    @import './module/addProductio/docketGrounp.scss';
+
+@import './views/tenant/selectSupplier.scss';
+
+@import './views/tenant/selectProduction.scss';
+
+    // selectProduction.vue ==> module样式
+    @import './module/selectProduction/topBar.scss';
+    @import './module/selectProduction/car.scss';
+
+@import './views/tenant/productionDetail.scss';
+
+    // selectProduction.vue ==> module样式
+    @import './module/productionDetail/selectList.scss';
+
+// supplier-view-style
+
+@import './views/supplier/orderList.scss';
+
+@import './views/supplier/orderDetail.scss';
+
+    // orderDetail-module-style
+    @import './module/orderDetail/eventInfo.scss';
+    @import './module/orderDetail/selectedProduction.scss';
+    @import './module/orderDetail/popup.scss';
+    @import './module/orderDetail/supplierDocket.scss';

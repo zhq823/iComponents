@@ -1,0 +1,100 @@
+{
+  "id": "614942",
+  "name": "iProDuction",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "制作物",
+  "glyphs": [
+    {
+      "icon_id": "304692",
+      "name": "member",
+      "font_class": "member",
+      "unicode": "e6e5",
+      "unicode_decimal": 59109
+    },
+    {
+      "icon_id": "702131",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e74c",
+      "unicode_decimal": 59212
+    },
+    {
+      "icon_id": "722171",
+      "name": "arrow-left",
+      "font_class": "previewleft",
+      "unicode": "e75b",
+      "unicode_decimal": 59227
+    },
+    {
+      "icon_id": "801506",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "902005",
+      "name": "arrow down",
+      "font_class": "arrowdown",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "902007",
+      "name": "arrow on",
+      "font_class": "arrowon",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "1126424",
+      "name": "telephone-regular",
+      "font_class": "telephoneregular",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "1134298",
+      "name": "map",
+      "font_class": "map",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "1185437",
+      "name": "arrow-right",
+      "font_class": "arrowright",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "1219426",
+      "name": "map",
+      "font_class": "map2",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "2511053",
+      "name": "date",
+      "font_class": "date",
+      "unicode": "e78a",
+      "unicode_decimal": 59274
+    },
+    {
+      "icon_id": "7766709",
+      "name": "icon_add",
+      "font_class": "add",
+      "unicode": "eb8f",
+      "unicode_decimal": 60303
+    },
+    {
+      "icon_id": "8286943",
+      "name": "icon_no_data",
+      "font_class": "no-data",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

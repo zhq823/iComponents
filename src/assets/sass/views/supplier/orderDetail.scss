@@ -1,0 +1,46 @@
+.orderDetail{
+    width: 100%;
+    height: 100%;
+    .orderDetailContent{
+        position: fixed;
+        width: 100%;
+        top: .44rem;
+        bottom: .44rem;
+        background: #eee;
+        .leadTime{
+            margin-top: .15rem;
+            @include pad(.15rem, .15rem, .15rem, .15rem);
+            background: #fff;
+            label{
+                color: #999;
+            }
+        }
+    }
+    .footer-btn-grounp{
+        width: 100%;
+        @include disFlex($justify: space-between);
+        .footer-btn-left{
+            background: #fff;
+            color: #FF4C4C;
+        }
+        .footer-refuse-btn{
+            background: #ddd;
+            color: #999;
+        }
+        .footer-cancel-btn{
+            background: #fff;
+            color: #ffb54c;
+        }
+        .footer-complete-btn{
+            background: #0099ff;
+            color: #fff;
+        }
+        .footer-delivery-btn{
+            background: #0099ff;
+            color: #fff;
+        }
+        span{
+            width: 100%;
+        }
+    }
+}

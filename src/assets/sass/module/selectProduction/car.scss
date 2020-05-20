@@ -1,0 +1,47 @@
+.carmodule{
+    position: fixed;
+    top: .44rem;
+    width: 100%;
+    bottom: .44rem;
+    z-index: 999;
+    background: rgba(0,0,0,.3);
+    .mask{
+        position: fixed;
+        top: .44rem;
+        width: 100%;
+        bottom: .44rem;
+    }
+    .carContent{
+        position: fixed;
+        width: 100%;
+        bottom: .44rem;
+        background: #fff;
+        .carHeader{
+            @include disFlex($justify: space-between);
+            @include pad(.15rem, .15rem, .15rem, .15rem);
+            border-bottom: 1px solid #ddd;
+            font-size: .12rem;
+            color: #999;
+        }
+        ul{
+            max-height: 4rem;
+            overflow-y: scroll;
+            li{
+                @include disFlex($justify: space-between);
+                @include pad(.15rem, .15rem, .15rem, .15rem);
+                border-bottom: 1px solid #ddd;
+                font-size: .16rem;
+                color: #333;
+            }
+            .carInner{
+                .itemInfo{
+                    @include disFlex($justify: flex-start);
+                    span{
+                        margin-left: .15rem;
+                    }
+                }
+            }
+        }
+        
+    } 
+}

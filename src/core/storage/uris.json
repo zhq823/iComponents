@@ -1,0 +1,18 @@
+{
+    "Uris": {
+        "passport": "https://passport-dev.smarteventcloud.cn",
+        "gateway": "https://gateway-dev.smarteventcloud.cn",
+        "smartalipay": "https://smartalipay-dev.smarteventcloud.cn",
+        "signalr": "https://signalr-dev.smarteventcloud.cn",
+        "webapp-iaccount": "https://iaccount-webapp-dev.smarteventcloud.cn",
+        "webapp-ievent": "https://ievent-webapp-dev.smarteventcloud.cn",
+        "webapp-imeal": "https://imeal-webapp-dev.smarteventcloud.cn",
+        "webapp-mshop": "https://mshop-webapp-dev.smarteventcloud.cn",
+        "webapp-ivenue": "http://ivenue-webpp-dev.smarteventcloud.cn/?type=tenant",
+        "webapp-icar": "https://icar-webapp-dev.smarteventcloud.cn",
+        "webapp-ijob": "https://ijob-webapp-dev.smarteventcloud.cn",
+        "webapp-imyprofile": "https://imyprofile-webapp-dev.smarteventcloud.cn",
+        "sso-roche": "https://b2bqa.roche.com/idp/startSSO.ping?PartnerSpId=https://signindev.smarteventcloud.cn/saml",
+        "webpart-ievent": "https://ievent-webparts-dev.smarteventcloud.cn"
+    }
+}

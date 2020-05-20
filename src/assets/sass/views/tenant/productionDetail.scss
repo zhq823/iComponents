@@ -1,0 +1,129 @@
+.productionDetail{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .productionContent{
+        width: 100%;
+        height: calc(100% - .88rem);
+        position: absolute;
+        top: .44rem;
+        overflow-y: scroll;
+        .prd-introduction{
+            @include pad(.15rem, .15rem, .15rem, .15rem);
+            background: #fff;
+            .prd-title{
+                @include disFlex($justify: flex-start, $align: flex-start);
+                @include pad($bottom: .15rem);
+                .prd-imgList{
+                    position: relative;
+                    width: .7rem;
+                    height: .70rem;
+                    background: #bbb;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        position: absolute;
+                        @include pad(.02rem, .02rem, .02rem, .02rem);
+                        width: 100%;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, .3);
+                        text-align: right;
+                        font-size: .12rem;
+                        color: #999;
+
+                    }
+                }
+                .prd-detail{
+                    margin-left: .10rem;
+                    width: 70%;
+                    .prd-name{
+                        font-size: .16rem;
+                        color: #333;
+                    }
+                    .prd-describe{
+                        font-size: .12rem;
+                        color: #999;
+                    }
+                }
+            }
+            .prd-instructions{
+                @include disFlex($justify: flex-start);
+                @include pad(.15rem, 0rem, 0rem, 0rem);
+                border-top: 1px dashed #999;
+                font-size: .14rem;
+                color: #666;
+                align-items: flex-start;
+                .instructions-title{
+                    float: left;
+                    width: 25%;
+                    height: 100%;
+                    color: #999;
+                }
+                .instructions-txt{
+                    margin-left: .10rem;
+                    width: 70%;
+                    display: block;
+                    font-family: -moz-fixed;
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                    // margin: 1em 0;
+                }
+            }
+        }
+        .mg-top-15{
+            margin-top: .15rem;
+            .inputStyle{
+                border: 0 none;
+                text-align: right;
+            }
+            input::-webkit-input-placeholder{
+                color: #ccc;
+                font-size: .14rem;
+                text-align: right;
+            }
+            input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                color: #909;
+                font-size: .14rem;
+                text-align: right;
+            }
+            input::-moz-placeholder { /* Mozilla Firefox 19+ */
+                color: #ccc;
+                font-size: .14rem;
+                text-align: right;
+            }
+            input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #ccc;
+                font-size: .14rem;
+                text-align: right;
+            }
+        }
+        .entryTxt{
+            margin-top: .15rem;
+            background: #fff;
+        }
+        .entryTxt:before{
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: 0;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            left: 15px;
+        }
+    }
+    .footerInner{
+        width: 100%;
+        height: 100%;
+        @include backgroundColor();
+        font-size: .18rem;
+        color: #fff;
+        text-align: center;
+        line-height: .44rem;
+    }
+}

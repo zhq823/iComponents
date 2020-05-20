@@ -1,0 +1,107 @@
+@import '../../core/scss/mixin.scss';
+.loadmore_container {
+    position: absolute;
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    font-size: 0.14rem;
+    /*已显示全部会议*/
+    .no_more_data {
+        text-align: center;
+        position: relative;
+        height: .4rem;
+        width: 95%;
+        margin: 0 auto;
+        .no_more_data_span {
+            display: inline-block;
+            width: 36%;
+            height: .4rem;
+            line-height: 0.4rem;
+            font-size: 0.14rem;
+            background-color: #EEEEEE;
+        }
+        .footer_line_left,
+        .footer_line_right {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 30%;
+            height: 0.1rem;
+            border-bottom: .01rem solid #CCCCCC;
+            position: absolute;
+            top: 0.1rem;
+        }
+        .footer_line_left {
+            left: 0rem;
+        }
+        .footer_line_right {
+            right: 0rem;
+        }
+    }
+    .mint-loadmore-top {
+        span {
+            -webkit-transition: .2s linear;
+            transition: .2s linear;
+            display: inline-block;
+            vertical-align: middle;
+            &.is-rotate {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg)
+            }
+        }
+        .drop_icon {
+            font-size: .24rem;
+            color: #666666;
+        }
+    }
+    .mint-loadmore-bottom {
+        span {
+            display: inline-block;
+            -webkit-transition: .2s linear;
+            transition: .2s linear;
+            vertical-align: middle;
+            &.is-rotate {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg)
+            }
+        }
+        .drop_icon {
+            font-size: .24rem;
+            color: #666666;
+        }
+    }
+}
+
+.loading_img {
+    width: 0.32rem;
+    height: 0.32rem;
+    //  margin-top: 0.12rem;
+}
+
+.successTips-enter-active {
+    animation: successTips-show 0.3s;
+}
+
+.successTips-leave-active {
+    animation: successTips-hide 0.5s;
+}
+
+@keyframes successTips-show {
+    from {
+        opacity: 0.3;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes successTips-hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

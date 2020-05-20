@@ -1,0 +1,31 @@
+.eventInfoModule{
+    margin-top: .15rem;
+    background: #fff;
+    @include pad(.15rem, .15rem, .15rem, .15rem);
+    h3{
+        @include pad(0rem, 0rem, .15rem, 0rem);
+        font-size: .18rem;
+        color: #2D72FF;
+    }
+    div{
+        @include disFlex($direction: column, $align: flex-start);
+        @include pad(.15rem, 0rem, 0rem, 0rem);
+        border-top: 1px dashed #999;
+        label{
+            margin-bottom: .15rem;
+            i{
+                color: #BFD5FF;
+            }
+            span{
+                margin: 0 .04rem;
+            }
+            a{
+                color: #2D72FF;
+                text-decoration: underline;
+            }
+        }
+        .lastLabel{
+            margin-bottom: 0;
+        }
+    }
+}

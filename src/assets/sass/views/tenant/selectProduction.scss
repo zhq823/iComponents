@@ -1,0 +1,107 @@
+
+.selectProduction{
+    position: relative;
+    height: 100%;
+    font-size: .14rem;
+    color: #999;
+    .selectProductionContent{
+        position: fixed;
+        top: .88rem;
+        background: #eee;
+        width: 100%;
+        height: calc(100% - .88rem);
+        .productionList{
+            margin-top: .15rem;
+            background: #fff;
+            .productionInfo{
+                @include disFlex($justify: flex-start);
+                @include pad(.15rem, .15rem, .15rem, .15rem);
+                border-bottom: 1px solid #e2e2e2;
+                .productionImg{
+                    width: 0.7rem;
+                    height: 0.7rem;
+                    background: #bbb;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;;
+                    }
+                }
+                .productionTxt{
+                    width: 70%;
+                    margin-left: .10rem;
+                    .productionName{
+                        font-size: .16rem;
+                        color: #333;
+                    }
+                    .productionDescribe{
+                        margin-top: .04rem;
+                        font-size: 0.14rem;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+    .footer-left-car{
+        width: 70%;
+        @include disFlex($justify: flex-start);
+        @include pad($left: .15rem);
+        .car{
+            position: relative;
+            width: .5rem;
+            height: .5rem;
+            border-radius: 50%;
+            margin-top: -0.14rem;
+            img{
+                width: 100%;
+            }
+            .carNum {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 0.16rem;
+                height: 0.16rem;
+                border-radius: 50%;
+                background-color: #ff0000;
+                text-align: center;
+                line-height: 0.12rem;
+                span {
+                    line-height: 0;
+                    color: #ffffff;
+                    font-size: 0.12rem;
+                }
+            }
+        }
+        .car-number{
+            color: #ffffff;
+        }
+        .car-number-gray{
+            color: #ffffff;
+        }
+        .car-total{
+            margin-left: .10rem;
+            h3{
+                font-size: .16rem;
+                color: #333;
+                em{
+                    margin: 0 .02rem;
+                    color: #fb5062;
+                }
+            }
+            .total-described{
+                font-size: .12rem;
+                color: #999;
+            }
+        }
+    }
+    .footer-rignt-confirm-btn{
+        width: 30%;
+        height: 100%;
+        @include backgroundColor();
+        font-size: .18rem;
+        color: #fff;
+        line-height: .44rem;
+        text-align: center;
+    }
+}

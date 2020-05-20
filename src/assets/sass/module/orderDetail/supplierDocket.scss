@@ -1,0 +1,117 @@
+.supplierDocket{
+    margin-top: .15rem;
+    .docketTopBar{
+        @include disFlex($justify: space-between);
+        height: .48rem;
+        background: #fff;
+        .barInner{
+            @include pad(0rem, .15rem, 0rem, .15rem);
+            width: 100%;
+            height: 100%;
+            font-size: .16rem;
+            color: #999;
+            text-align: center;
+            line-height: .48rem;
+            border-bottom: 2px solid #ddd;
+        }
+        .active{
+            color: #0099ff;
+            border-bottom: 2px solid #0099ff;
+        }
+    }
+    .docketContent{
+        padding-bottom: 1rem;
+        .demand,.statements{
+            .production{
+                margin-top: .15rem;
+                background: #fff;
+                .productionInfo{
+                    @include disFlex($justify: space-between);
+                    @include pad(.15rem, .15rem, .15rem, .15rem);
+                    .productionImg{
+                        width: .8rem;
+                        height: .7rem;
+                        background: #bbb;
+                    }
+                    .productionTxt{
+                        margin-left: .08rem;
+                        width: 75%;
+                        text-align: left;
+                        h4{
+                            font-size: .16rem;
+                            color: #333;
+                        }
+                        div{
+                            color: #999;
+                            label{
+                                box-sizing: border-box;
+                                padding: .02rem .04rem;
+                                font-size: .12rem;
+                                background: #BFD5FF;
+                                color: #fff;
+                                // border: 1px solid #eee;
+                                border-radius: .02rem;
+                                margin-right: .04rem;
+                            }
+                            .price{
+                                float: right;
+                            }
+                        }
+                    }
+                }
+                p{
+                    // border-top: 1px dashed #999;
+                    position: relative;
+                    @include pad(0.15rem, .15rem, 0.15rem, .15rem);
+                    color: #999;
+                }
+                p:before{
+                    content: " ";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    height: 1px;
+                    transform: scaleY(0.5);
+                    left: 15px;
+                    border-bottom: 2px dashed #ddd;
+                }
+            }
+            .fastList{
+                margin-top: 0;
+            }
+        }
+        .shippersName,.shippersPhone{
+            margin-top: .15rem;
+            @include disFlex($justify: space-between);
+            @include pad(0.15rem, .15rem, 0.15rem, .15rem);
+            background: #fff;
+            font-size: .16rem;
+            color: #999;
+            span{
+                color: #333;
+            }
+        }
+        .billModule{
+            .billTitle{
+                box-sizing: border-box;
+                padding:.15rem;
+                font-size: .16rem;
+                color: #333;
+            }
+            .billInner{
+                background: #fff;
+                box-sizing: border-box;
+                padding: .15rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img{
+                    // margin-left: 2px;
+                    background: #bbb;
+                    width: 33.3%;
+                }
+            }
+        }
+    }
+}

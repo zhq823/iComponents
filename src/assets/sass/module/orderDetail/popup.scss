@@ -1,0 +1,35 @@
+.orderDetailPopup{
+    position: fixed;
+    top: .44rem;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(0,0,0,.3);
+    .mask{
+        position: fixed;
+        top: .44rem;
+        width: 100%;
+        bottom: 0;
+    }
+    .popupInner{
+        position: fixed;
+        width: 100%;
+        max-height: 4rem;
+        overflow-y: scroll;
+        bottom: 0;
+        background: #fff;
+        .popupItem{
+            @include pad(.15rem, .15rem, .15rem, .15rem);
+            text-align: center;
+            font-size: .16rem;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+        }
+        .selectedInner{
+            color: #0099ff;
+        }
+        .lastSelect{
+            border-bottom: 0;
+        }
+    }
+}

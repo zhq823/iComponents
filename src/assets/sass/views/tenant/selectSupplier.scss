@@ -1,0 +1,59 @@
+.selectSupplier{
+    position: relative;
+    height: 100%;
+    font-size: .14rem;
+    color: #999;
+    .selectSupplierContent{
+        position: fixed;
+        top: .44rem;
+        background: #eee;
+        width: 100%;
+        height: calc(100% - .44rem);
+        .supplierList{
+            margin-top: .15rem;
+            background: #fff;
+            .supplierInfo{
+                @include disFlex($justify: flex-start);
+                @include pad(.15rem, .15rem, .15rem, .15rem);
+                border-bottom: 1px solid #e2e2e2;
+                .supplierImg{
+                    width: .40rem;
+                    height: .40rem;
+                    border-radius: 50%;
+                    background: #bbb;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .supplierTxt{
+                    margin-left: .10rem;
+                    .supplierName{
+                        font-size: .16rem;
+                        color: #333;
+                    }
+                    .supplierTag{
+                        @include disFlex($justify: space-between);
+                        margin-top: .04rem;
+                        label{
+                            font-size: .12rem;
+                            span{
+                                margin-left: .04rem;
+                                color: #FFB54C;
+                            }
+                        }
+                    }
+                }
+            }
+            .supplierMap{
+                @include disFlex($justify: flex-start);
+                @include pad(.15rem, .15rem, .15rem, .15rem);
+                i{
+                    font-size: .14rem;
+                    margin-right: .04rem;
+                    @include color()
+                }
+            }
+        }
+    }
+}

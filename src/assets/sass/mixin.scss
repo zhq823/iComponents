@@ -1,0 +1,21 @@
+/**
+* @mixin 混合器
+* @mixin posA($top, $right, $bottom, $left) {
+*    position: absolute;
+*    left:$left;
+*    top: $top
+* }
+* 详细用法： [sass官网](https://www.sass.hk/)
+*/
+
+@mixin disFlex($wrap: nowrap, $direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align
+}
+@mixin pad($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    box-sizing: border-box;
+    padding: $top $right $bottom $left
+}

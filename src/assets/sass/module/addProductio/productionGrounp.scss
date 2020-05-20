@@ -1,0 +1,77 @@
+.productionGrounp{
+    margin-top: .15rem;
+    h3{
+        @include pad(0rem, .15rem, .15rem, .15rem);
+        color: #333333;
+        font-size: 0.14rem;
+    }
+    .production{
+        margin-top: .15rem;
+        background: #fff;
+        .productionInfo{
+            @include disFlex($justify: space-between);
+            @include pad(.15rem, .15rem, .15rem, .15rem);
+            
+            .productionImg{
+                width: .8rem;
+                height: .7rem;
+                background: #bbb;
+            }
+            .productionTxt{
+                margin-left: .08rem;
+                width: 75%;
+                text-align: left;
+                h4{
+                    font-size: .16rem;
+                    color: #333;
+                }
+                div{
+                    margin-top: .08rem;
+                    color: #999;
+                    label{
+                        box-sizing: border-box;
+                        padding: .02rem .04rem;
+                        font-size: .12rem;
+                        border: 1px solid #eee;
+                        border-radius: .02rem;
+                        margin-right: .04rem;
+                    }
+                    .price{
+                        margin-top: .0rem;
+                        float: right;
+                    }
+                }
+            }
+        }
+        .productionDesc{
+            @include pad(.15rem, .15rem, .15rem, .15rem);
+            color: #999;
+            border-top: 1px dashed #bbb;
+            border-bottom: 1px solid #bbb
+        }
+        .btnGrounp{
+            @include disFlex($justify: flex-end);
+            @include pad(.15rem, .15rem, .15rem, .15rem);
+            span{
+                font-size: .12rem;
+                color: #FB5062;
+                margin-left: .04rem;
+                @include pad(.04rem, .06rem, .04rem, .06rem);
+                border: 1px solid #FB5062;
+                border-radius: .04rem;
+            }
+        }
+    }
+    .firstProduction{
+        margin-top: 0;
+    }
+    .noOrderGoods{
+        box-sizing: border-box;
+        padding: .8rem .15rem;
+        background: #FFF;
+        text-align: center;
+        color: #999;
+        font-size: 0.18rem;
+    }
+    
+}

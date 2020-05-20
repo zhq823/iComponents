@@ -1,0 +1,36 @@
+.addProduction{
+    position: relative;
+    height: 100%;
+    font-size: .14rem;
+    .addProductionContent{
+        position: fixed;
+        top: .44rem;
+        background: #eee;
+        width: 100%;
+        height: calc(100% - .44rem)
+    }
+    .footerInner{
+        @include disFlex($justify: flex-start);
+        width: 60%;
+        span{
+            width: 50%;
+            height: .44rem;
+            font-size: .18rem;
+        }
+        .footer-btn-left{
+            background: #fff;
+            color: #FF4C4C;
+        }
+        .addBtn{
+           color: #ffffff;
+           background-color: #FFAF32;
+        }
+        .confirmBtn{
+            color: #fff;
+            @include backgroundColor();
+        }
+        .disableBtn{
+            background: #999;
+        }
+    }
+}

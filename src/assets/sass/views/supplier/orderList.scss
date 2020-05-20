@@ -1,0 +1,57 @@
+.orderList{
+    width: 100%;
+    height: 100%;
+    font-size: .14rem;
+    color: #999;
+    .orderListContent{
+        position: fixed;
+        top: .44rem;
+        width: 100%;
+        bottom: 0;
+        background: #eee;
+        .orderListInner{
+            .orderOnce{
+                margin-top: .15rem;
+                background: #fff;
+                .orderTitle,.orderInfo,.leadTime{
+                    @include disFlex($justify: space-between);
+                    @include pad(.15rem, .15rem, .15rem, .15rem);
+                }
+                .orderInfo{
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    background: #F8F8F8;
+                    img{
+                        width: .90rem;
+                        height: .70rem;
+                        margin-top: .10rem;
+                        margin-right: .15rem;
+                        background: #bbb;
+                    }
+                    .infoGrounp{
+                        width: 68%;
+                        // margin-left: .10rem;
+                        div{
+                            // margin-top: .10rem;
+                            label{
+                                background: #BFD5FF;
+                                font-size: .12rem;
+                                color: #fff;
+                                @include pad(.02rem, .04rem, .02rem, .04rem);
+                                margin-right: .08rem;
+                            }
+                        }
+                    }
+                }
+                .leadTime{
+                    span{
+                        color: #333;
+                    }
+                    .leadTimePrice{
+                        font-size: .18rem;
+                    }
+                }
+            }
+        }
+    }
+}

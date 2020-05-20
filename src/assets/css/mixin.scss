@@ -1,0 +1,168 @@
+@import "./base.scss";
+
+// @function set-notification-text-color($color) {
+// @if data-theme="msd" {
+//     $color-primary: red;
+// }
+// }
+
+@mixin color() {
+    [data-theme="lilly"] & {
+        color: $color-lilly !important;
+    }
+    [data-theme="roche"] & {
+        color: $color-roche !important;
+    }
+    [data-theme="merck"] & {
+        color: $color-merck !important;
+    }
+    [data-theme="merckweb"] & {
+        color: $color-merck !important;
+    }
+    [data-theme="msd"] & {
+        color: $color-msd !important;
+    }
+    [data-theme="dsm"] & {
+        color: $color-dsm !important;
+    }
+    [data-theme="pfizer"] & {
+        color: $color-pfizer !important;
+    }
+    [data-theme="allergan"] & {
+        color: $color-allergan !important;
+    }
+    [data-theme="abbvie"] & {
+        color: $color-abbvie !important;
+    }
+    [data-theme="supplier"] & {
+        color: $color-supplier !important;
+    }
+    [data-theme="operation"] & {
+        color: $color-operation !important;
+    }
+    [data-theme="eventcoolop"] & {
+        color: $color-eventcoolop !important;
+    }
+}
+
+@mixin backgroundColor() {
+    [data-theme="lilly"] & {
+        background-color: $color-lilly !important;
+    }
+    [data-theme="roche"] & {
+        background-color: $color-roche !important;
+    }
+    [data-theme="merck"] & {
+        background-color: $color-merck !important;
+    }
+    [data-theme="merckweb"] & {
+        background-color: $color-merck !important;
+    }
+    [data-theme="msd"] & {
+        background-color: $color-msd !important;
+    }
+    [data-theme="dsm"] & {
+        background-color: $color-dsm !important;
+    }
+    [data-theme="pfizer"] & {
+        background-color: $color-pfizer !important;
+    }
+    [data-theme="allergan"] & {
+        background-color: $color-allergan !important;
+    }
+    [data-theme="abbvie"] & {
+        background-color: $color-abbvie !important;
+    }
+    [data-theme="supplier"] & {
+        background-color: $color-supplier !important;
+    }
+    [data-theme="operation"] & {
+        background-color: $color-operation !important;
+    }
+    [data-theme="eventcoolop"] & {
+        background-color: $color-eventcoolop !important;
+    }
+}
+
+@mixin borderColor() {
+    [data-theme="lilly"] & {
+        border-color: $color-lilly;
+    }
+    [data-theme="roche"] & {
+        border-color: $color-roche;
+    }
+    [data-theme="merck"] & {
+        border-color: $color-merck;
+    }
+    [data-theme="merckweb"] & {
+        border-color: $color-merck;
+    }
+    [data-theme="msd"] & {
+        border-color: $color-msd;
+    }
+    [data-theme="dsm"] & {
+        border-color: $color-dsm;
+    }
+    [data-theme="pfizer"] & {
+        border-color: $color-pfizer !important;
+    }
+    [data-theme="allergan"] & {
+        border-color: $color-allergan !important;
+    }
+    [data-theme="abbvie"] & {
+        border-color: $color-abbvie !important;
+    }
+    [data-theme="supplier"] & {
+        border-color: $color-supplier !important;
+    }
+    [data-theme="operation"] & {
+        border-color: $color-operation !important;
+    }
+    [data-theme="eventcoolop"] & {
+        border-color: $color-eventcoolop !important;
+    }
+}
+
+@mixin boxShadow() {
+    [data-theme="lilly"] & {
+        box-shadow: 1px 1px .15rem $color-lilly;
+    }
+    [data-theme="roche"] & {
+        box-shadow: 1px 1px .15rem $color-roche;
+    }
+    [data-theme="merck"] & {
+        box-shadow: 1px 1px .15rem $color-merck;
+    }
+    [data-theme="merckweb"] & {
+        box-shadow: 1px 1px .15rem $color-merck;
+    }
+    [data-theme="msd"] & {
+        box-shadow: 1px 1px .15rem $color-msd;
+        border-color: $color-msd;
+    }
+    [data-theme="dsm"] & {
+        box-shadow: 1px 1px .15rem $color-dsm;
+        border-color: $color-dsm;
+    }
+    [data-theme="pfizer"] & {
+        box-shadow: 1px 1px .15rem $color-pfizer;
+    }
+    [data-theme="allergan"] & {
+        box-shadow: 1px 1px .15rem $color-allergan;
+    }
+    [data-theme="abbvie"] & {
+        box-shadow: 1px 1px .15rem $color-abbvie;
+    }
+    [data-theme="supplier"] & {
+        box-shadow: $color-supplier !important;
+    }
+    [data-theme="operation"] & {
+        box-shadow: $color-operation !important;
+    }
+    [data-theme="eventcoolop"] & {
+        box-shadow: 1px 1px .15rem $color-eventcoolop;
+    }
+}
+
+
+

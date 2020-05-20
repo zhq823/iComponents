@@ -1,0 +1,60 @@
+.selectedProduction{
+    color: #333;
+    .selecedTitle{
+        @include pad(.15rem, .15rem, .15rem, .15rem);
+        font-size: .14rem;
+        color: #2D73FF;
+        span{
+            border-left: .02rem solid #2D73FF;
+        }
+    }
+    .selectedContent{
+        margin-bottom: .5rem;
+        .prdGrounp{
+            @include pad(.15rem, .15rem, .15rem, .15rem);
+            background: #fff;
+            margin-bottom: .15rem;
+            .prdTop{
+                @include disFlex($justify: flex-start);
+                @include pad(0rem, .0rem, .15rem, 0rem);
+                .prdImg{
+                    width: .86rem;
+                    height: .70rem;
+                    background: #bbb;
+                }
+                .prdInfo{
+                    width: 68%;
+                    margin-left: .10rem;
+                    .prdName{
+                        font-size: .16rem;
+                        color: #333;
+                    }
+                    div{
+                        // margin-top: .10rem;
+                        label{
+                            @include pad(.02rem, .04rem, .02rem, .04rem);
+                            background: #BFD5FF;
+                            font-size: .12rem;
+                            color: #fff;
+                        }
+                        span{
+                            font-size: .14rem;
+                            color: #999;
+                            margin: 0 .04rem;
+                        }
+                        .price{
+                            margin-top: 0rem;
+                            float: right;
+                        }
+                    }
+                }
+            }
+            p{
+                border-top: 1px dashed #999;
+                @include pad(.15rem, .0rem, .0rem, .0rem);
+                font-size: .14rem;
+                color: #999;
+            }
+        }
+    }
+}
