@@ -16,7 +16,7 @@
     "accounting": "^0.4.1",
     "axios": "^0.19.2",
     "less": "^3.11.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "smart-core-util": "^2.2.5",
     "smart-indicator": "^1.1.3",
     "tiny-cookie": "^2.3.2",
